@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.oscarvj.aplazotest.ui.view.categories.CategoriesFragment"
+        android:label="HomeFragmentView"
+        tools:layout="@layout/fragment_categories">
+
+        <action
+            android:id="@+id/action_detailCategoryFragment"
+            app:destination="@id/detailCategoryFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_detail_meals_category_Fragment"
+            app:destination="@id/mealsDetailFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailCategoryFragment"
+        android:name="com.oscarvj.aplazotest.ui.view.categories.detail.DetailCategoryFragment"
+        android:label="DetailCategoryFragmentView"
+        tools:layout="@layout/fragment_detail_category">
+
+        <action
+            android:id="@+id/action_meals_Fragment"
+            app:destination="@id/mealsFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mealsFragment"
+        android:name="com.oscarvj.aplazotest.ui.view.meals.MealsFragment"
+        android:label="MealsFragmentView"
+        tools:layout="@layout/fragment_meals">
+
+        <action
+            android:id="@+id/action_detail_meals_Fragment"
+            app:destination="@id/mealsDetailFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mealsDetailFragment"
+        android:name="com.oscarvj.aplazotest.ui.view.meals.detail.DetailMealFragment"
+        android:label="DetailMealsFragmentView"
+        tools:layout="@layout/fragment_detail_meal">
+
+    </fragment>
+
+</navigation>

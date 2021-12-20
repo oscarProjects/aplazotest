@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AplazoTest</string>
+    <string name="suggestion_of_the_day">Suggestion of the day</string>
+    <string name="categories">Categories</string>
+    <string name="titulo">Titulo</string>
+    <string name="category">Category</string>
+    <string name="details">Details</string>
+    <string name="meals">Meals</string>
+    <string name="strarea">Area</string>
+    <string name="strtags">Tags</string>
+    <string name="youtube">Youtube</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="web_site">Web Site</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search</string>
+    <string name="find_meal_by_name">Find Meal By Name</string>
+</resources>
